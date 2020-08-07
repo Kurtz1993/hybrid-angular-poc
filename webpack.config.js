@@ -5,14 +5,13 @@ module.exports = {
   mode: 'development',
 
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'src'),
     compress: true,
     port: 8080,
     historyApiFallback: true,
   },
   entry: {
-    main: './src/app.ts',
-    vendors: './src/vendors.ts',
+    main: './src/app.ts'
   },
   // Currently we need to add '.ts' to the resolve.extensions array.
   resolve: {

@@ -9,7 +9,7 @@ gulp.task('bundle-tpls', () => {
         module: 'hybrid',
       })
     )
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./src'));
 });
 
 gulp.task('default', ['bundle-tpls'], () => {
