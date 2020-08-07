@@ -1,0 +1,15 @@
+<div class="repo" ng-if="$ctrl.repository">
+  <h1>{{::$ctrl.repository.name}}</h1>
+
+  <h3>Description</h3>
+  <p>{{::$ctrl.repository.description || 'No description provided'}}</p>
+  <p ng-if="$ctrl.lastCommit">
+    Last commit on: {{ $ctrl.lastCommit.author.date | date }} by {{ $ctrl.lastCommit.author.name }}
+  </p>
+
+  <h3>Collaborators</h3>
+  <collaborators
+    ng-repeat="collaborator in $ctrl.collaborators"
+    collaborator="collaborator"
+  ></collaborators>
+</div>

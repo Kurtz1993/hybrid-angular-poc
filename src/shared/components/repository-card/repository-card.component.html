@@ -1,0 +1,23 @@
+<div class="card" ui-sref="repository({repo: $ctrl.repository.name})">
+  <div class="card__icons">
+    <counter type="0" count="$ctrl.repository.stargazers_count"></counter>
+    <counter type="1" count="$ctrl.repository.forks_count"></counter>
+    <counter type="2" count="$ctrl.repository.watchers_count"></counter>
+    <counter type="3" count="$ctrl.repository.open_issues"></counter>
+  </div>
+
+  <div class="card__header">
+    <img
+      ng-src="{{ $ctrl.repository.owner.avatar_url }}"
+      alt="Author image"
+      class="card__thumb thumbnail thumbnail--round"
+    />
+    <h1 class="card__title">
+      {{ $ctrl.repository.name }}
+    </h1>
+  </div>
+
+  <!-- <div class="card__content">
+    <p class="card__description">{{ $ctrl.repository.description }}</p>
+  </div> -->
+</div>

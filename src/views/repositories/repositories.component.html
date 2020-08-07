@@ -1,0 +1,12 @@
+<h1 class="repos__title">
+  Hello, {{ $ctrl.username }}!
+  <button class="btn btn-danger" ng-click="$ctrl.signOut()">Sign Out</button>
+</h1>
+<h2 class="repos__subtitle">Here's a list of all your repositories!</h2>
+
+<div class="repos__list">
+  <repository-card
+    ng-repeat="repository in $ctrl.repositories"
+    repository="repository"
+  ></repository-card>
+</div>

@@ -1,0 +1,17 @@
+<form class="login" ng-submit="$ctrl.signIn()">
+  <div class="github-logo">
+    <img ng-src="{{ $ctrl.octocat }}" alt="GitHub logo" width="400" height="333" />
+  </div>
+
+  <div class="form-group">
+    <label for="username">GitHub Username</label>
+    <input type="text" class="form-control" name="username" ng-model="$ctrl.username" />
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" name="password" ng-model="$ctrl.password" />
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+</form>

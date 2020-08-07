@@ -1,0 +1,174 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "align": {
+      "options": ["parameters", "statements"]
+    },
+    "array-type": { "severity": "warn", "options": "array" },
+    "arrow-return-shorthand": { "severity": "warn" },
+    "class-name": { "severity": "warn" },
+    "curly": { "severity": "default", "options": "ignore-same-line" },
+    "cyclomatic-complexity": {
+      "severity": "error",
+      "options": 20
+    },
+    "deprecation": {
+      "severity": "warning"
+    },
+    "component-class-suffix": { "severity": "warn" },
+    "contextual-lifecycle": { "severity": "error" },
+    "directive-class-suffix": { "severity": "warn" },
+    "directive-selector": {
+      "severity": "warn",
+      "options": ["attribute", "app", "camelCase"]
+    },
+    "component-selector": {
+      "severity": "warn",
+      "options": ["element", "app", "kebab-case"]
+    },
+    "eofline": true,
+    "import-blacklist": { "severity": "error", "options": "rxjs/Rx" },
+    "import-spacing": true,
+    "indent": {
+      "options": ["spaces"]
+    },
+    "max-classes-per-file": false,
+    "max-line-length": { "severity": "warn", "options": 120 },
+    "member-access": { "severity": "warn", "options": "no-public" },
+    "member-ordering": {
+      "severity": "default",
+      "options": {
+        "order": [
+          "public-static-field",
+          "public-static-method",
+          "public-instance-field",
+          "protected-instance-field",
+          "private-instance-field",
+          "constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    },
+    "no-console": {
+      "severity": "warn",
+      "options": ["debug", "info", "time", "timeEnd", "trace"]
+    },
+    "no-empty": false,
+    "no-inferrable-types": { "severity": "warn", "options": "ignore-params" },
+    "no-non-null-assertion": true,
+    "no-redundant-jsdoc": { "severity": "warn" },
+    "no-string-literal": false,
+    "no-switch-case-fall-through": true,
+    "no-var-requires": false,
+    "object-literal-key-quotes": [true, "as-needed"],
+    "quotemark": { "severity": "warn", "options": ["single", "avoid-escape"] },
+    "semicolon": {
+      "severity": "error",
+      "options": ["always"]
+    },
+    "space-before-function-paren": {
+      "options": {
+        "anonymous": "never",
+        "asyncArrow": "always",
+        "constructor": "never",
+        "method": "never",
+        "named": "never"
+      }
+    },
+    "typedef-whitespace": {
+      "options": [
+        {
+          "call-signature": "nospace",
+          "index-signature": "nospace",
+          "parameter": "nospace",
+          "property-declaration": "nospace",
+          "variable-declaration": "nospace"
+        },
+        {
+          "call-signature": "onespace",
+          "index-signature": "onespace",
+          "parameter": "onespace",
+          "property-declaration": "onespace",
+          "variable-declaration": "onespace"
+        }
+      ]
+    },
+    "variable-name": {
+      "options": ["ban-keywords", "check-format", "allow-leading-underscore"]
+    },
+    "whitespace": {
+      "options": [
+        "check-branch",
+        "check-decl",
+        "check-operator",
+        "check-separator",
+        "check-type",
+        "check-typecast"
+      ]
+    },
+    "no-conflicting-lifecycle": true,
+    "no-host-metadata-property": true,
+    "no-input-rename": true,
+    "no-inputs-metadata-property": true,
+    "no-output-native": true,
+    "no-output-on-prefix": true,
+    "no-output-rename": true,
+    "no-outputs-metadata-property": true,
+    "ordered-imports": {
+      "severity": "warn",
+      "options": {
+        "import-sources-order": "any",
+        "named-imports-order": "any",
+        "grouped-imports": true,
+        "groups": [
+          {
+            "name": "@angular, @ngrx or rxjs dependencies",
+            "match": "^(@angular/|@ngrx/|rxjs).*",
+            "order": 0
+          },
+          {
+            "name": "Other third-party dependencies",
+            "match": "^(?!@angular/|@ngrx/|rxjs|@app/|@core|@env/|@shared/|@legacy/|./|../).*",
+            "order": 10
+          },
+          {
+            "name": "App-specific dependencies",
+            "match": "^(@app/|@core|@env/|@shared/|@legacy/).*",
+            "order": 20
+          },
+          {
+            "name": "Relative paths",
+            "match": "^(|./|../).*",
+            "order": 30
+          }
+        ]
+      }
+    },
+    "template-accessibility-alt-text": {
+      "severity": "error"
+    },
+    "template-accessibility-elements-content": {
+      "severity": "error"
+    },
+    "template-accessibility-label-for": {
+      "severity": "error"
+    },
+    "template-accessibility-tabindex-no-positive": {
+      "severity": "error"
+    },
+    "template-accessibility-table-scope": {
+      "severity": "warn"
+    },
+    "template-accessibility-valid-aria": {
+      "severity": "error"
+    },
+    "template-banana-in-box": true,
+    "template-no-negated-async": true,
+    "use-lifecycle-interface": true,
+    "use-pipe-transform-interface": true,
+    "linebreak-style": [true, "LF"]
+  },
+  "rulesDirectory": ["codelyzer"]
+}

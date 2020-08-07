@@ -1,0 +1,17 @@
+@import '~bootstrap/scss/bootstrap';
+
+@import './views/auth/auth.component.scss';
+@import './views/repositories/repositories.component.scss';
+@import './shared/components/repository-card/repository-card.component.scss';
+@import './shared/components/collaborators/collaborators.component.scss';
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+:root {
+  --active-colour: #1c3abd;
+  --inactive-colour: #cecece;
+  --thumbnail-size: 60px;
+}

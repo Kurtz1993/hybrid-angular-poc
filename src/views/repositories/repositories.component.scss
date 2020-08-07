@@ -1,0 +1,16 @@
+.repos {
+  &__title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

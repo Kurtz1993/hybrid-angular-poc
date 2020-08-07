@@ -1,0 +1,19 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "target": "es5",
+    "allowUnreachableCode": false,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "paths": {
+      "@legacy/*": ["./src/*"],
+      "@shared/*": ["./src/shared/*"]
+    }
+  }
+}
